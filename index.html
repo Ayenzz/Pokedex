@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//db.onlinewebfonts.com/c/073a3b73a63a87e100f6bb8f003fc0d3?family=Flexo+Light" rel="stylesheet" type="text/css"/>
+
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script> 
+
+    <link rel="shortcut icon" href="https://assets.pokemon.com/static2/_ui/img/favicon.ico">
+    <title>Home</title>
+</head>
+<body>
+    <header class="header-nav"> 
+        <img src="img/logo.png">
+        <ul>
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+
+            <a href="about.html">
+                <li>About</li>
+            </a>
+        
+        </ul>
+    </header>
+
+    <div class="main-content">
+        <div class="search">
+            <input class="search-input" id="inputname"> 
+            <button class="search-btn" onclick="getPokemon()"> Find </button>
+            <button class="random-btn" onclick="getRandomPokemon()"> Random </button>
+        </div>
+        <div class="poke-card">
+            <img class="img-pokemon" id="pokemon-id-img">
+            <div class="attributes">
+                <h5 class="pokemon-id" id="pokemon-id"></h5>
+                <h3 class="pokemon-name" id="pokemon-name"></h3>
+                <h4 class="pokemon-types" id="pokemon-types"></h4>
+            </div>
+        
+        </div>
+    </div>
+
+</body>
+</html>
